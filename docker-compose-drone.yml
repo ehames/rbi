@@ -7,7 +7,6 @@ networks:
 services:
   drone:
     image: drone/drone:latest
-    container_name: drone
     restart: always
     ports:
       - "80:8000"
@@ -29,7 +28,6 @@ services:
 
   gogs:
     image: gogs/gogs:latest
-    container_name: gogs
     restart: always
     ports:
       - "8022:22"
